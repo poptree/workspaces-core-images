@@ -299,6 +299,7 @@ EXPOSE $VNC_PORT \
        $UPLOAD_PORT \
        $AUDIO_PORT
 WORKDIR $HOME
+RUN echo 'kasm-user:vncpassword' | chpasswd
 USER 1000
 
 
